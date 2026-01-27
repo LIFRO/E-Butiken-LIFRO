@@ -19,4 +19,15 @@ public class ProductApiController : ControllerBase
         var products = await _db.Products.ToListAsync();
         return Ok(products);
     }
+
+    [HttpGet("products/{id}")]
+    public async Task<ActionResult<ProductModel>> GetProduct(int id)
+    {
+        var product = await _db.Products.FirstOrDefaultAsync(p => p.Id == id);
+        if (product == null)
+        {
+            return NotFound();
+        }
+        return Ok(product);
+    }
 }
