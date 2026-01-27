@@ -13,4 +13,5 @@ public class AppUser
     [Required, MaxLength(200)]
     public string PasswordHash { get; set; } = string.Empty;
 
+
 }

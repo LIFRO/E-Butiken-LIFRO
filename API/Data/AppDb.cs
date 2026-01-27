@@ -9,6 +9,6 @@ public class AppDbContext : DbContext
     public AppDbContext(DbContextOptions<AppDbContext> Options) : base(Options){}
 
     public DbSet<AppUser> Users => Set<AppUser>();
-    public DbSet<ProductModel> Product => Set<ProductModel>();
+    public DbSet<ProductModel> Products => Set<ProductModel>();
 
 }
