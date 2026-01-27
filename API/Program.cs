@@ -25,5 +25,8 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+builder.Services.AddDbContext<AppDbContext>(o =>
+    o.UseInMemoryDatabase("Db"));
+
 
 app.Run();
