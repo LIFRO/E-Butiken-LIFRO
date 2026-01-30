@@ -44,8 +44,7 @@ GET http://{{host}}/api/products
 
 // HÄMTA SPECIFIK PRODUKT
 // Används för att visa en specifik produkt i webbshopen
-GET http://{{host}}/api/products/ // ID PÅ EN SPECIFIK PRODUKT
-
+GET http://{{host}}/api/products/1
 ###
 
 // SKAPA PRODUKT // UTAN TOKEN SÅ SKALL ANROPET MISSLYCKAS = 401

@@ -26,8 +26,8 @@ POST http://{{host}}/login
 Content-Type: application/json
 
 {
-  "email": "// EN USER EMAIL",
-  "password": "// EN USER EMAIL"
+  "email": "test@mail.com",
+  "password": "test"
 }
 
 ###
@@ -47,7 +47,7 @@ GET http://{{host}}/api/products
 // HÄMTA SPECIFIK PRODUKT
 // Används för att visa en specifik produkt i webbshopen
 
-GET http://{{host}}/api/products/ // ID PÅ PRODUKT
+GET http://{{host}}/api/products/1
 
 ###
 
@@ -74,14 +74,14 @@ POST http://{{host}}/api/orders/
 Content-Type: application/json
 
 {
-  "user": "//user email",
+  "user": "test@mail.com",
       "products": [
     {
-      "id": "// ID PÅ EN PRODUKT",
+      "id": "1",
       "quantity": 1
     },
     {
-      "id": "// ID PÅ EN PRODUKT",
+      "id": "3",
       "quantity": 2
     }
   ]
