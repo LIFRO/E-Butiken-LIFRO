@@ -38,7 +38,7 @@ public class OderApiController : ControllerBase
 
             if(product.Stock < item.Quantity)
                 {
-                    return BadRequest($"Not enough stock for product {product.Name}.");
+                    return Conflict($"Not enough stock for product {product.Name}.");
                 }
 
                     product.Stock -= item.Quantity;
